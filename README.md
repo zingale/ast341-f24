@@ -1,2 +1,3 @@
-# ast341-f24
-examples from AST 341, Fall 2024
+# AST 341 (Fall 2024)
+
+Some example notebooks explaining concepts from our Stars class.
