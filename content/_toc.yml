@@ -1,0 +1,7 @@
+format: jb-book
+root: intro
+parts:
+  - caption: Thermodynamics
+    chapters:
+    - file: thermo/thermodynamics
+    - file: thermo/degeneracy-parameter
