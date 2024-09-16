@@ -5,3 +5,6 @@ parts:
     chapters:
     - file: thermo/thermodynamics
     - file: thermo/degeneracy-parameter
+  - caption: Stellar Models
+    chapters:
+    - file: polytrope/lane-emden
