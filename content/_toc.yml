@@ -6,6 +6,7 @@ parts:
     - file: thermo/thermodynamics
     - file: thermo/degeneracy-parameter
   - caption: Nuclear Reactions
+    chapters:
     - file: nuclear/pp-cno
     - file: CNO-integration
   - caption: Stellar Models
