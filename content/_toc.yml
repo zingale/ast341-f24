@@ -13,6 +13,7 @@ parts:
   - caption: Stellar Models
     chapters:
     - file: polytrope/lane-emden
+    - file: polytrope/lane-emden-cxx
   - caption: Homeworks
     chapters:
     - file: homework/simple-stellar-model
