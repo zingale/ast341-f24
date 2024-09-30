@@ -134,8 +134,8 @@ int main() {
 
         if (n == 0) {
             std::cout << "#" << std::setw(4) << "n"
-                      << std::setw(22) << "xi_1"
-                      << std::setw(22) << "-xi**2 dtheta/dxi |_xi1" << std::endl;
+                      << std::setw(22) << "ξ_1"
+                      << std::setw(22) << "-ξ**2 dθ/dξ |_ξ1" << std::endl;
         }
         auto xi1 = p.get_xi1();
         auto minus_xisq_dtheta_dxi = p.get_minus_xisq_dtheta_dxi();
