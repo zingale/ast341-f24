@@ -77,9 +77,10 @@ public:
 
             auto k4 = rhs(_xi + h, tmp);
 
-            y.theta += (1./6.) * h * (k1.theta + 2.0*k2.theta + 2.0*k3.theta + k4.theta);
-            y.dtheta_dxi += (1./6.) * h * (k1.dtheta_dxi + 2.0*k2.dtheta_dxi + 2.0*k3.dtheta_dxi + k4.dtheta_dxi);
-
+            y.theta += (1./6.) * h * (k1.theta + 2.0*k2.theta +
+                                      2.0*k3.theta + k4.theta);
+            y.dtheta_dxi += (1./6.) * h * (k1.dtheta_dxi + 2.0*k2.dtheta_dxi +
+                                           2.0*k3.dtheta_dxi + k4.dtheta_dxi);
 
             _xi += h;
 
@@ -126,19 +127,21 @@ public:
 
 int main() {
 
-    for (int imodel = 0; imodel <= 9; ++imodel) {
-
-        double n = static_cast<double>(imodel) / 2.0;
+    for (auto n : {0.0, 0.5, 1.0, 1.5, 2.0, 2.5, 3.0, 3.5, 4.0, 4.5}) {
 
         Polytrope p(n);
         p.integrate();
 
-        if (imodel == 0) {
-            std::cout << "#" << std::setw(4) << "n" << std::setw(22) << "xi_1" << std::setw(22) << "-xi**2 dtheta/dxi |_xi1" << std::endl;
+        if (n == 0) {
+            std::cout << "#" << std::setw(4) << "n"
+                      << std::setw(22) << "xi_1"
+                      << std::setw(22) << "-xi**2 dtheta/dxi |_xi1" << std::endl;
         }
         auto xi1 = p.get_xi1();
         auto minus_xisq_dtheta_dxi = p.get_minus_xisq_dtheta_dxi();
 
-        std::cout << std::setw(4) << n << std::setw(22) << xi1 << std::setw(22) << minus_xisq_dtheta_dxi << std::endl;
+        std::cout << std::setw(4) << n
+                  << std::setw(22) << xi1
+                  << std::setw(22) << minus_xisq_dtheta_dxi << std::endl;
     }
 }
