@@ -16,3 +16,4 @@ parts:
   - caption: Homeworks
     chapters:
     - file: homework/simple-stellar-model
+    - file: homework/homework2
