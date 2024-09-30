@@ -5,6 +5,7 @@ parts:
     chapters:
     - file: thermo/thermodynamics
     - file: thermo/degeneracy-parameter
+    - file: thermo/eos-regimes
   - caption: Nuclear Reactions
     chapters:
     - file: nuclear/pp-cno
