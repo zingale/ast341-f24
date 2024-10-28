@@ -6,3 +6,5 @@ sympy
 pynucastro
 numba
 unyt
+mesa_reader
+myst-nb
