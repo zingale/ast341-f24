@@ -14,6 +14,7 @@ parts:
     chapters:
     - file: polytrope/lane-emden
     - file: polytrope/lane-emden-cxx
+    - file: mesa/stellar-models
   - caption: Homeworks
     chapters:
     - file: homework/simple-stellar-model
