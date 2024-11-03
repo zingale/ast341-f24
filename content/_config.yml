@@ -34,6 +34,8 @@ html:
 sphinx:
   config:
     html_show_copyright: false
+    nbsphinx_timeout: 500
+    nb_execution_timeout: 500
 
 launch_buttons:
    binderhub_url: "https://mybinder.org"
