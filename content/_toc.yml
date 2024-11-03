@@ -16,7 +16,7 @@ parts:
     - file: polytrope/lane-emden-cxx
     - file: mesa/stellar-models
   - caption: Massive Stars
-    captures:
+    chapters:
     - file: neutronstars/nse
     - file: neutronstars/tov
   - caption: Homeworks
