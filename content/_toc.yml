@@ -23,4 +23,8 @@ parts:
     chapters:
     - file: homework/simple-stellar-model
     - file: homework/homework2
+    - file: homework/3alpha
+    - file: homework/ignition-curves
     - file: homework/hw7_models
+    - file: homework/stellar-models
+
