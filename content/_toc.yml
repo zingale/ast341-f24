@@ -27,4 +27,5 @@ parts:
     - file: homework/ignition-curves
     - file: homework/hw7_models
     - file: homework/stellar-models
+    - file: homework/equipotentials
 
